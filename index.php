@@ -79,15 +79,15 @@ foreach ($hotels as $hotel) {
 
         </thead>
         <tbody>
-
-            <tr>
-                <th scope="row"></th>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-            </tr>
-
+            <?php foreach ($hotels as $hotel) : ?>
+                <tr>
+                    <td><?php echo $hotel["name"] ?></td>
+                    <td><?php echo $hotel["description"] ?></td>
+                    <td><?php echo $hotel["parking"] ?></td>
+                    <td><?php echo $hotel["vote"] ?> / 5</td>
+                    <td><?php echo $hotel["distance_to_center"] ?> Km</td>
+                </tr>
+            <?php endforeach ?>
         </tbody>
     </table>
 
