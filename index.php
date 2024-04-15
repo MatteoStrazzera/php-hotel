@@ -42,6 +42,14 @@ $hotels = [
 
 
 var_dump($hotels);
+
+// stampiamo le singole informazioni di ogni hotel in pagina
+
+foreach ($hotels as $hotel) {
+    echo $hotel["name"] . ' - ' . $hotel["description"] . ' - ' . $hotel["parking"] . ' - ' . 'Valutazione: ' . $hotel["vote"] . ' - ' . $hotel["distance_to_center"] . ' Km';
+    echo "<br>";
+}
+
 ?>
 
 <!DOCTYPE html>
