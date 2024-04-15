@@ -82,8 +82,16 @@ foreach ($hotels as $hotel) {
             <?php foreach ($hotels as $hotel) : ?>
                 <tr>
                     <td><?php echo $hotel["name"] ?></td>
-                    <td><?php echo $hotel["description"] ?></td>
-                    <td><?php echo $hotel["parking"] ?></td>
+                    <td><a href=""><?php echo $hotel["description"] ?></a></td>
+                    <td>
+                        <?php
+                        if ($hotel["parking"] == true) {
+                            echo 'Parcheggio disponibile';
+                        } else {
+                            echo 'Nessun parcheggio';
+                        }
+                        ?>
+                    </td>
                     <td><?php echo $hotel["vote"] ?> / 5</td>
                     <td><?php echo $hotel["distance_to_center"] ?> Km</td>
                 </tr>
