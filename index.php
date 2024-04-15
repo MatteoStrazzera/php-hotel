@@ -64,7 +64,32 @@ foreach ($hotels as $hotel) {
 
 <body>
 
+    <h1>Hotels</h1>
 
+    <table class="table">
+        <thead>
+
+            <tr>
+                <th scope="col">Nome Hotel</th>
+                <th scope="col">Descrizione Hotel</th>
+                <th scope="col">Parcheggio</th>
+                <th scope="col">Voto complessivo</th>
+                <th scope="col">Distanza dal centro</th>
+            </tr>
+
+        </thead>
+        <tbody>
+
+            <tr>
+                <th scope="row"></th>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+
+        </tbody>
+    </table>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 </body>
